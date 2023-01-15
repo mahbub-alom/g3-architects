@@ -173,6 +173,115 @@ header{
 
 /* some facts section finish  */
 
+.award-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 150px;
+    text-align: center;
+}
+.award-single-box{
+    border: 1px solid #FF900E;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    transition: 0.5s ease-in-out;
+}
+.award-single-box:hover{
+    box-shadow: 3px 3px 10px gray;
+}
+.award-single-box h2{
+    color: #424242;
+    margin: 10px 0;
+}
+.award-single-box h3{
+    color: #424242;
+}
+
+/* award section finish */
+
+.contact-head{
+    margin: 50px 120px;
+}
+.contact-tittle{
+    text-align: center;
+    margin: 30px 0;
+}
+.contact-container{
+    background-color: #EAECF0;
+    padding: 40px;
+}
+.fullname-container{
+    display: flex;
+}
+.fullname-container input{
+    width: 235px;
+    height: 40px;
+    margin: 0 20px;
+    border: none;
+    padding:0 10px;
+}
+.fullname-container h4{
+    margin: 40px 20px 10px 20px;
+}
+.subject-input{
+    width: 85%;
+    height: 40px;
+    margin: 0 20px;
+    border: none;
+    padding: 0 10px;
+}
+.subject{
+    margin: 20px 0 10px 20px;
+}
+.message{
+    margin: 20px 0 10px 20px;
+}
+.message-input{
+    width: 85%;
+    height: 140px;
+    margin: 0 20px;
+    border: none;
+    padding: 10px;
+}
+.button{
+    margin:15px 0 0 20px;
+}
+
+/* contact section finish  */
+
+.sponsor-container{
+    text-align: center;
+    margin: 30px 0;
+}
+.sponsor-container h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.sponsor-container p{
+    color: #727272;
+}
+
+/* sponsor-container finish */
+
+.sponsor-logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 120px;
+}
+.single-sponsor img{
+    filter: grayscale(100%);
+}
+
+/* sponsor logo section finish */
+
+footer{
+    background-color: #FFF4E7;
+    margin: 0 120px;
+    text-align: center;
+    padding: 15px;
+}
+
 /* nav bar media quarries use here   */
 
 @media only screen and (max-width:576px){
@@ -266,5 +375,44 @@ header{
 
     .some-facts-container{
         margin: 10px 15px;
+    }
+
+    /* award section media quarries  */
+
+    .award-container{
+        flex-direction: column;
+        margin: 30px 100px;
+    }
+    .award-single-box{
+        margin: 15px 0;
+    }
+
+    /* contact section media quarries */
+
+    .contact-head{
+        margin: 20px 10px;
+    }
+    .fullname-container{
+        flex-direction: column;
+    }
+    .contact-container{
+        padding: 10px;
+    }
+    .sponsor-container{
+        margin: 10px 5px;
+    }
+
+    /* sponsor logos media quarries is here  */
+
+    .sponsor-logo{
+        flex-direction: column;
+        margin: 30px 10px;
+    }
+    .single-sponsor{
+        margin: 20px 10px;
+    }
+
+    footer{
+        margin:0;
     }
 }
