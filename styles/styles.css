@@ -95,6 +95,84 @@ header{
 
 /* team container finish */
 
+.architect-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 50px 0 120px;
+    position: relative;
+    padding: 50px;
+}
+.architect-single-container{
+    width: 979px;
+    padding-right: 40px;
+}
+.architect-image-box{
+    margin-bottom: 30px;
+}
+.architect-image-box img{
+    height: 100%;
+    width: 100%;
+}
+.architect-top-text h1{
+    color: #131313;
+    border-left: 4px solid #FF900E;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    font-size: 35px;
+}
+.architect-second-text p{
+    color: #727272;
+    margin-bottom: 20px;
+}
+.architect-single-item{
+    padding: 20px 25px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow:1px 1px 50px rgba(0, 0, 0, 0.205);
+}
+.architect-single-item h2{
+    color: #181313;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.architect-single-item p{
+    color: #727272;
+}
+
+/* architect section finish */
+
+.experience-button{
+    background-color: #FF900E;
+    text-align: center;
+    border: none;
+    padding: 40px 30px;
+    border-radius: 5px;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 716px;
+    left: 662px;
+}
+.experience-button span{
+    font-size: 45px;
+}
+
+/* experience section finish  */
+
+.some-facts-container{
+    margin: 60px 160px;
+}
+.some-facts-container h2{
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+.some-facts-container p{
+    color: #727272;
+}
+
+/* some facts section finish  */
+
 /* nav bar media quarries use here   */
 
 @media only screen and (max-width:576px){
@@ -161,4 +239,32 @@ header{
         margin: 10px 0;
     }
 
+    /* architect section media quarries  */
+
+    .architect-container{
+        margin: 0 5px;
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    .architect-single-container{
+        width: 100%;
+    }
+    .architect-top-text h1{
+        margin-top: 5px;
+    }
+    .architect-single-container{
+        padding: 0;
+    }
+    .experience-button{
+        position: static;
+        top: 0;
+        left: 0;
+        margin-bottom: 20px;
+    }
+
+    /* some facts section media quarries */
+
+    .some-facts-container{
+        margin: 10px 15px;
+    }
 }
